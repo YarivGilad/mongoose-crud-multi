@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "37646a01-4eb0-4a70-b16b-3c7e909d4148",
+		"name": "crud-multi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "523423"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Create a user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovitch\",\n\t\"email\":\"aaa@bb.cc\",\n\t\"phone\":\"035278889\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user by ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovtich\",\n\t\"email\":\"john.malkovitch@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/users/5bf3e18d2d6c2910e8e7ab08",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								"5bf3e18d2d6c2910e8e7ab08"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovitch\",\n\t\"email\":\"aa@bb\",\n\t\"phone\":\"035278889\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/users/5bf3f0e4a43d4211d7d8ee4d",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								"5bf3f0e4a43d4211d7d8ee4d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/users/5bf3e18d2d6c2910e8e7ab08",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								"5bf3e18d2d6c2910e8e7ab08"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "stories",
+			"item": [
+				{
+					"name": "Create a Story",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"Debugging your backend like a frontend with Sidekick\",\n\t\"body\":\"Sidekick recently released an open source version that allows developers to self-host and includes all the live debugging features provided by the commercial version. We will focus on the open source version in this article.\",\n\t\"author\":\"63b5b9f415eab0e4ddc2da6b\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/stories/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"stories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Stories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/stories/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"stories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update story by ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"Create a custom debounce Hook in React 2222\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/stories/63b5ba7315eab0e4ddc2da6c",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"stories",
+								"63b5ba7315eab0e4ddc2da6c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete story by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovitch\",\n\t\"email\":\"aa@bb\",\n\t\"phone\":\"035278889\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/stories/5bf3f0e4a43d4211d7d8ee4d",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"stories",
+								"5bf3f0e4a43d4211d7d8ee4d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get story by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/stories/5bf3e18d2d6c2910e8e7ab08",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"stories",
+								"5bf3e18d2d6c2910e8e7ab08"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "meetings",
+			"item": [
+				{
+					"name": "Create a meeting",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"topic\":\"Saving the planet! [urgent meeting]\",\n    \"participants\":[\"63b5b9f415eab0e4ddc2da6b\"]\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/meetings/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"meetings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All meetings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/meetings/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"meetings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update meeting by ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"What is debouncing?\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/meetings/5bf3e18d2d6c2910e8e7ab08",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"meetings",
+								"5bf3e18d2d6c2910e8e7ab08"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete story by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\":\"John\",\n\t\"last_name\":\"Malkovitch\",\n\t\"email\":\"aa@bb\",\n\t\"phone\":\"035278889\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3030/api/users/5bf3f0e4a43d4211d7d8ee4d",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								"5bf3f0e4a43d4211d7d8ee4d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get story by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/users/5bf3e18d2d6c2910e8e7ab08",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"users",
+								"5bf3e18d2d6c2910e8e7ab08"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
